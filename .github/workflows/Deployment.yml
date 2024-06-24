@@ -22,6 +22,6 @@ jobs:
         run: npm run build -- --output-path=dist/registros --base-href=/registros/
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/registros
+        run: npx angular-cli-ghpages --dir=dist/browser/registros
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
