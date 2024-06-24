@@ -1,6 +1,6 @@
 name: Deploy Angular project to GitHub Pages
 
-on:
+on: push
   push:
     branches:
       - main  # O la rama que prefieras
@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build 
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         run: npx angular-cli-ghpages --dir=dist/registros
