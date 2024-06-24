@@ -1,6 +1,6 @@
 name: Deploy Angular project to GitHub Pages
 
-on: push
+on:
   push:
     branches:
       - main  # O la rama que prefieras
